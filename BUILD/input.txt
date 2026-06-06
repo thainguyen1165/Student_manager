@@ -1,0 +1,29 @@
+# FILE DU LIEU DAU VAO CHO CHUONG TRINH QUAN LY SINH VIEN
+# Chuong trinh tu doc file nay khi mo len.
+# Khi thoat bang chuc nang 0, chuong trinh tu ghi du lieu ra output.txt.
+# Khong dung dau | trong ten mon, ho ten, giang vien.
+
+[COURSES]
+# MaMon | TenMon | SoTinChi
+CTDL | Cau truc du lieu va giai thuat | 3
+CSDL | Co so du lieu | 3
+TRR | Toan roi rac | 2
+
+[SECTIONS]
+# MaLopHocPhan | MaMon | HocKy | GiangVien
+LHP001 | CTDL | HK1-2026 | Nguyen Van A
+LHP002 | CSDL | HK1-2026 | Tran Thi B
+LHP003 | TRR | HK1-2026 | Le Van C
+
+[STUDENTS]
+# MSSV | HoTen | LopHanhChinh | NgaySinh
+SV001 | Nguyen Van An | D22CNTT01 | 2005-01-10
+SV002 | Tran Binh Minh | D22CNTT01 | 2005-04-20
+SV003 | Le Quang Huy | D22CNTT02 | 2005-09-15
+
+[GRADES]
+# MSSV | MaMon | MaLopHocPhan | DiemQuaTrinh | DiemGiuaKy | DiemCuoiKy
+SV001 | CTDL | LHP001 | 8.00 | 8.00 | 9.00
+SV001 | CSDL | LHP002 | 7.00 | 7.50 | 8.00
+SV002 | CTDL | LHP001 | 6.00 | 7.00 | 7.00
+SV003 | TRR | LHP003 | 9.00 | 8.50 | 9.00
