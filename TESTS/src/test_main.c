@@ -9,7 +9,7 @@ extern void test_grade(void);
 extern void test_data(void);
 
 int main(void) {
-    printf("--- BAT DAU CHAY KIEM THU TU DONG (UNIT TESTS) ---\n\n");
+    printf("--- BAT DAU CHAY UNIT TESTS ---\n\n");
 
     printf("1. Kiem thu module Utils:\n");
     test_utils();
@@ -26,10 +26,10 @@ int main(void) {
     printf("Fail: %d\n", tests_run - tests_passed);
 
     if (tests_run == tests_passed) {
-        printf("\n=> TRANG THAI: SUCCESS (Tat ca bai kiem thu deu vuot qua!)\n");
+        printf("\n=> TRANG THAI: Tat ca bai kiem thu deu vuot qua!\n");
         return 0;
     } else {
-        printf("\n=> TRANG THAI: FAILED (Co %d bai kiem thu that bai!)\n", tests_run - tests_passed);
+        printf("\n=> TRANG THAI: Co %d bai kiem thu that bai!\n", tests_run - tests_passed);
         return 1;
     }
 }
