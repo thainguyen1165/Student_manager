@@ -18,7 +18,6 @@ void print_menu(void) {
     print_box_line("   3. Them sinh vien", width);
     print_box_line("   4. Nhap / cap nhat diem", width);
     print_box_line("   5. Hien thi danh sach sinh vien", width);
-    print_box_line("      - Trong muc nay chon sap xep theo MSSV / ten / GPA", width);
     print_box_line("   6. Hien thi danh sach mon hoc", width);
     print_box_line("   7. Hien thi danh sach lop hoc phan", width);
     print_box_line("   8. Tim kiem sinh vien", width);
