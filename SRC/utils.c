@@ -138,7 +138,7 @@ int is_valid_birth_date(const char* date) {
         return 0;
     if (sscanf(date, "%4d-%2d-%2d", &year, &month, &day) != 3)
         return 0;
-    if (date[2] != '-' || date[5] != '-')
+    if (date[4] != '-' || date[7] != '-')
         return 0;
     if (day < 1 || day > 31)
         return 0;
