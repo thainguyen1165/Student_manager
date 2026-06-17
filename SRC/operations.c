@@ -61,7 +61,7 @@ void menu_add_student(StudentSystem* sys) {
     read_line("Ngay sinh (yyyy-mm-dd): ", birth, sizeof(birth));
     if (is_valid_birth_date(birth))
         break;
-    printf("Ngay sinh khong hop le. Vui long nhap theo dinh dang yy-mm-dd.\n");
+    printf("Ngay sinh khong hop le. Vui long nhap theo dinh dang yyyy-mm-dd.\n");
 }
 
     add_student_direct(sys, id, name, class_name, birth);
