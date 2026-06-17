@@ -134,17 +134,26 @@ void print_box_line(const char* text, int width) {
 
 int is_valid_birth_date(const char* date) {
     int day, month, year;
-    if (strlen(date) != 10)
-        return 0;
-    if (sscanf(date, "%4d-%2d-%2d", &year, &month, &day) != 3)
+    int i;
+    int days_in_month[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+    if (date == NULL || strlen(date) != 10)
         return 0;
     if (date[4] != '-' || date[7] != '-')
         return 0;
-    if (day < 1 || day > 31)
+    for (i = 0; i < 10; i++) {
+        if (i == 4 || i == 7) continue;
+        if (!isdigit((unsigned char)date[i]))
+            return 0;
+    }
+    if (sscanf(date, "%4d-%2d-%2d", &year, &month, &day) != 3)
+        return 0;
+    if (year < 1900 || year > 9999)
         return 0;
     if (month < 1 || month > 12)
         return 0;
-    if (year < 1900 || year > 9999)
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
+        days_in_month[1] = 29;
+    if (day < 1 || day > days_in_month[month - 1])
         return 0;
     return 1;
 }
