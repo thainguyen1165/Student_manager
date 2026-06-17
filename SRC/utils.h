@@ -16,5 +16,6 @@ int string_equals_ignore_case(const char* a, const char* b);
 int string_contains_ignore_case(const char* text, const char* keyword);
 int split_fields(char* line, char* fields[], int max_fields);
 void print_box_line(const char* text, int width);
+int is_valid_birth_date(const char* date);
 
 #endif
