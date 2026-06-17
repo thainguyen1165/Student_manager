@@ -57,7 +57,7 @@ void menu_add_student(StudentSystem* sys) {
 
     read_line("Ho ten: ", name, sizeof(name));
     read_line("Lop hanh chinh: ", class_name, sizeof(class_name));
-    read_line("Ngay sinh (yyyy-mm-dd): ", birth, sizeof(birth));
+    read_line("Ngay sinh (dd-mm-yyyy): ", birth, sizeof(birth));
 
     add_student_direct(sys, id, name, class_name, birth);
     printf("Da them sinh vien thanh cong.\n");
